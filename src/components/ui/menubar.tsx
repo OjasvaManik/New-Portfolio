@@ -56,7 +56,7 @@ function MenubarTrigger({
     <MenubarPrimitive.Trigger
       data-slot="menubar-trigger"
       className={cn(
-        "transition-border duration-300 ease-in-out border-b-4 border-transparent hover:border-b-4 hover:border-red-700/80 focus:text-white data-[state=open]:border-b-4 data-[state=open]:border-red-700/80 data-[state=open]:text-white flex items-center rounded-2xl px-4 py-1 text-2xl font-medium outline-hidden select-none",
+        "text-black transition-border duration-300 ease-in-out border-b-4 border-transparent hover:border-b-4 hover:border-red-700/80 focus:text-black data-[state=open]:border-b-4 data-[state=open]:border-red-700/80 data-[state=open]:text-black flex items-center rounded-2xl px-4 py-1 text-2xl font-medium outline-hidden select-none",
         className
       )}
       {...props}

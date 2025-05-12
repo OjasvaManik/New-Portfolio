@@ -118,7 +118,7 @@
     @apply bg-black text-white font-[Palanquin];
   }
   ::selection {
-    @apply text-[#10172A] bg-red-700/80
+    @apply text-white bg-red-700/80
   }
 }
 
@@ -135,6 +135,11 @@
   .typewrite-p {
     @apply uppercase font-[Righteous] text-8xl lg:text-[410px] inline overflow-hidden text-nowrap border-r-2;
     animation: typing 2s steps(22) forwards, blink 1s step-end infinite;
+  }
+
+  .typewrite-p--d {
+    @apply text-4xl font-[Jetbrains_Mono] px-4 mb-6 text-amber-500 inline overflow-hidden border-r-2;
+    animation: typing 0.5s steps(22) forwards, blink 1s step-end infinite;
   }
 
 }
