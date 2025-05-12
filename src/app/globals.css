@@ -117,6 +117,9 @@
   body {
     @apply bg-black text-white font-[Palanquin];
   }
+  ::selection {
+    @apply text-[#10172A] bg-red-700/80
+  }
 }
 
 @layer utilities {
@@ -130,9 +133,10 @@
   }
 
   .typewrite-p {
-    @apply uppercase font-[Righteous] text-[310px] inline overflow-hidden text-nowrap border-r-2;
+    @apply uppercase font-[Righteous] text-8xl lg:text-[410px] inline overflow-hidden text-nowrap border-r-2;
     animation: typing 2s steps(22) forwards, blink 1s step-end infinite;
   }
+
 }
 
 @keyframes typing {
@@ -181,6 +185,13 @@
 @font-face {
   font-family: "Caveat";
   src: url("/fonts/Caveat/Caveat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fascinate";
+  src: url("/fonts/Fascinate_Inline/FascinateInline-Regular.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
