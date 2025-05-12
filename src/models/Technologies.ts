@@ -11,6 +11,8 @@ const TechnologySchema = new mongoose.Schema({
         normal: { type: String, default: '' },
         hover: { type: String, default: '' },
     },
+}, {
+    timestamps: true,
 });
 
 TechnologySchema.pre('save', function (next) {

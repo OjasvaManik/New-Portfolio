@@ -6,6 +6,9 @@ const ProjectSchema = new mongoose.Schema({
     description: { type: String, required: true },
     technologies: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Technologies' }],
     images: { type: [String], default: [] },
+    link: { type: String, default: null },
+}, {
+    timestamps: true,
 });
 
 const slugify = (str: string) =>
@@ -18,4 +21,4 @@ ProjectSchema.pre('save', function (next) {
     next();
 });
 
-export default mongoose.models.Projects || mongoose.model('Projects', ProjectSchema);
+export default mongoose.models.Project || mongoose.model('Project', ProjectSchema);

@@ -32,7 +32,7 @@ async function updateProfile(req: Request) {
 
 export const PATCH = withAuth(updateProfile);
 
-async function getProfile() {
+export async function getProfile() {
     await dbConnect();
 
     const profile = await Profile.findOne();
@@ -43,4 +43,4 @@ async function getProfile() {
     return NextResponse.json(profile, { status: 200 });
 }
 
-export const GET = withAuth(getProfile);
+export const GET = getProfile;
