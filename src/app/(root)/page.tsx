@@ -4,8 +4,10 @@ import Info from "@/components/created/Info";
 export default function Home() {
   return (
     <main>
-        <Hero />
-        <Info />
+        <div className={''}>
+            <Hero />
+            <Info />
+        </div>
     </main>
   );
 }

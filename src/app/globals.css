@@ -133,9 +133,10 @@
   }
 
   .typewrite-p {
-    @apply uppercase font-[Righteous] text-8xl lg:text-[410px] inline overflow-hidden text-nowrap border-r-2;
-    animation: typing 2s steps(22) forwards, blink 1s step-end infinite;
+    @apply uppercase font-[Righteous] text-xl lg:text-[90px] inline overflow-hidden text-nowrap border-r-2;
+    animation: typing 5.5s steps(22, end) infinite, blink 1s step-end infinite;
   }
+
 
   .typewrite-p--d {
     @apply text-4xl font-[Jetbrains_Mono] px-4 mb-6 text-amber-500 inline overflow-hidden border-r-2;
@@ -145,11 +146,17 @@
 }
 
 @keyframes typing {
-  from {
+  0% {
     width: 0;
   }
-  to {
+  40% {
     width: 100%;
+  }
+  80% {
+    width: 100%; /* Hold full width for delay */
+  }
+  100% {
+    width: 0; /* Return to start */
   }
 }
 

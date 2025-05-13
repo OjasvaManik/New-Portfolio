@@ -1,6 +1,10 @@
+import TechMain from "@/components/created/TechMain";
+
 const Page = () => {
     return (
-        <div>Tech</div>
+        <div>
+            <TechMain />
+        </div>
     )
 }
 export default Page
